@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header,
+.footer {
+    background: #000066 repeat;
+    color: #fff;
+}
+.middle {
+    background: #3333ff;
+    color: #fff;
+}
+.hero {
+    background: #333 url(../Images/Hero%20CBS.png) no-repeat 50% 50%;
+    background-size: cover;
+    height: 585px;
+}
+.nav {
+    overflow: hidden;
+}
+.nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    display: block;
+    font: bold 30px "Microsoft Tai Le Bold", Calibri, Georgia;
+    padding: 10px;
+    margin-right: 25px;
+}
+.nav li {
+    float: left;
+    list-style-type: none;
+    }
