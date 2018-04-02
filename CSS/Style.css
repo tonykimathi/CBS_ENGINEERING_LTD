@@ -4,19 +4,64 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+* {
+margin: 0;
+padding: 0;
+}
+
 a {
     text-decoration: none;
 }
+
 .container {
     width: 1140px;
     margin: 0 auto;
+    padding: 0;
 }
 
-.header,
-.footer {
+.header {
     background: #000066 repeat;
     color: #fff;
+    height: 57px;
+
 }
+.footer{
+    text-align: center;
+    background: #000066 repeat;
+    color: #fff;
+    height: 150px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+.column ul {
+    list-style-type: none;
+}
+.column ul a {
+    color: darkgrey;
+}
+.column ul a:hover {
+    color: #ffffff;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the columns stack on top of each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
 .middle {
     background: #3333ff;
     color: #fff;
@@ -28,7 +73,15 @@ a {
 }
 .nav {
     overflow: hidden;
+    top: 0;
+    transition: top 0.3s;
 }
+
+.nav a:hover {
+    background-color: #3333ff;
+    color: black;
+}
+
 .nav a {
     float: left;
     color: #f2f2f2;
