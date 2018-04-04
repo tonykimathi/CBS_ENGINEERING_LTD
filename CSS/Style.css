@@ -1,12 +1,12 @@
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 * {
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -25,18 +25,41 @@ a {
     height: 57px;
 
 }
-.footer{
-    text-align: center;
+.footer {
+
     background: #000066 repeat;
     color: #fff;
-    height: 150px;
+    height: 170px;
+}
+.copyright {
+    text-align: center;
 }
 
-/* Create three equal columns that floats next to each other */
+/* Create four equal columns that float next to each other */
 .column {
     float: left;
     width: 25%;
     padding: 10px;
+}
+.column1 {
+    float: left;
+    text-align: center;
+    padding: 10px;
+}
+.column1 .left, .right {
+    width: 10%;
+}
+
+.column1 .middle {
+    width: 80%;
+}
+
+.column1 p {
+    color: black;
+}
+
+.column a:hover {
+    opacity: 0.5;
 }
 .column ul {
     list-style-type: none;
@@ -63,14 +86,34 @@ a {
 }
 
 .middle {
-    background: #3333ff;
-    color: #fff;
+    background: beige;
+    opacity: 0.85;
+    color: black;
+    height: 400px;
 }
+
+.middleTitle {
+    text-align: center;
+    padding: 10px;
+}
+
 .hero {
     background: #333 url(../Images/Hero%20CBS.png) no-repeat 50% 50%;
     background-size: cover;
     height: 585px;
 }
+.hero2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #333 url(../Images/Hero%20CBS.png) no-repeat 50% 50%;
+    background-size: cover;
+    height: 600px;
+    opacity: 0.9;
+}
+.tagline {
+    color: #ffffff;
+    text-align: center;
+    font-size: 85px;
+}
+
 .nav {
     overflow: hidden;
     top: 0;
@@ -94,4 +137,4 @@ a {
 .nav li {
     float: left;
     list-style-type: none;
-    }
+}
