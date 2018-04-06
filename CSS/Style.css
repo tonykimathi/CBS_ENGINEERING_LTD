@@ -18,6 +18,13 @@ a {
     margin: 0 auto;
     padding: 0;
 }
+.container3 {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #ffffff;
+}
 
 .header {
     background: #000066 repeat;
@@ -41,17 +48,28 @@ a {
     width: 25%;
     padding: 10px;
 }
+
 .column1 {
     float: left;
-    text-align: center;
+    text-align: left;
     padding: 10px;
 }
-.column1 .left, .right {
-    width: 10%;
+.column2 {
+    float: left;
+    text-align: left;
+    padding: 10px;
+    background: beige;
+    opacity: 0.85;
+}
+.left, .right {
+    width: 5%;
 }
 
-.column1 .middle {
-    width: 80%;
+.middle {
+    width: 90%;
+    height: 538px;
+    background: beige;
+    opacity: 0.85;
 }
 
 .column1 p {
@@ -85,7 +103,7 @@ a {
     }
 }
 
-.middle {
+.mainmiddle {
     background: beige;
     opacity: 0.85;
     color: black;
@@ -105,13 +123,33 @@ a {
 .hero2 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #333 url(../Images/Hero%20CBS.png) no-repeat 50% 50%;
     background-size: cover;
-    height: 600px;
+    height: 710px;
     opacity: 0.9;
 }
+
+.hero3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #333 url(../Images/Hero%20CBS.png) no-repeat 50% 50%;
+    background-size: cover;
+    height: 1900px;
+    opacity: 0.9;
+}
+.hero4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #333 url(../Images/Hero%20CBS.png) no-repeat 50% 50%;
+    background-size: cover;
+    height: 2060px;
+    opacity: 0.9;
+}
+
+.margin-white img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .tagline {
     color: #ffffff;
     text-align: center;
-    font-size: 85px;
+    font-size: 55px;
 }
 
 .nav {
@@ -126,15 +164,35 @@ a {
 }
 
 .nav a {
-    float: left;
     color: #f2f2f2;
     text-align: center;
     display: block;
-    font: bold 30px "Microsoft Tai Le Bold", Calibri, Georgia;
+    font: bold 26px "Times New Roman", Calibri, Georgia;
     padding: 10px;
     margin-right: 25px;
 }
 .nav li {
     float: left;
     list-style-type: none;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
 }
