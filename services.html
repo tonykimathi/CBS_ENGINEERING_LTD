@@ -3,19 +3,21 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>SERVICES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../CBS_ENGINEERING_LTD/CSS/Style.css">
 </head>
 <body>
 <header class="header">
     <div class="container">
         <nav>
-            <ul class="nav">
-                <li class="home"><a href="Index.html">HOME</a></li>
-                <li class="about us"><a href="aboutUs.html">ABOUT US</a></li>
-                <li class="portfolio"><a href="portfolio.html">PORTFOLIO</a></li>
-                <li class="services"><a href="services.html">TECHNOLOGY</a></li>
-                <li class="contact us"><a href="contactUs.html">CONTACT US</a></li>
-            </ul>
+            <div class="nav">
+                <a href="index.html">HOME</a>
+                <a href="aboutUs.html">ABOUT US</a>
+                <a class="active" href="portfolio.html">PORTFOLIO</a>
+                <a class="active" href="services.html">TECHNOLOGY</a>
+                <a href="contactUs.html">CONTACT US</a>
+                <a href="javascript:void(0);" style="font-size:26px;" class="icon" onclick="myFunction()">☰</a>
+            </div>
         </nav>
     </div>
 </header>
@@ -288,5 +290,15 @@
     </div>
 
 </footer>
+<script>
+    function myFunction() {
+        var x = document.getElementsByClassName("nav");
+        if (x.className === "nav") {
+            x.className += " responsive";
+        } else {
+            x.className = "nav";
+        }
+    }
+</script>
 </body>
 </html>
