@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOME</title>
+    <link rel="stylesheet" href="../CBS_ENGINEERING_LTD/CSS/Style.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <nav>
+            <div class="nav">
+                <a class="active" href="index.html">HOME</a>
+                <a href="aboutUs.html">ABOUT US</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="services.html">TECHNOLOGY</a>
+                <a href="contactUs.html">CONTACT US</a>
+                <a href="javascript:void(0);" style="font-size:26px;" class="icon" onclick="myFunction()">☰</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<div class="hero">
+    <div class="container">
+
+    </div>
+</div>
+
+<main class="mainmiddle">
+    <div class="container">
+        <div class="middleTitle">
+            <h2>Current Projects</h2>
+        </div>
+        <div class="row" id="middle">
+            <div class="column">
+                <a href="portfolio.html">
+                    <img src="Images/Construction1.jpg" alt="Construction" style="width:100%" height="200">
+                </a>
+                <h3>Commercial/Residential Flats</h3>
+                <p>We have flats currently in construction in Ruiru, Tassia and Wiston Gichuku flats in Roysambu.</p>
+            </div>
+            <div class="column">
+                <a href="portfolio.html">
+                    <img src="Images/Construction2.jpg" alt="Construction" style="width:100%" height="200">
+                </a>
+                <h3>Industries/Factories</h3>
+                <p>We are also currently constructing structures for Agrovet product in Murang'a town.</p>
+            </div>
+            <div class="column">
+                <a href="portfolio.html">
+                    <img src="Images/Flats.jpg" alt="Flats" style="width:100%" height="200">
+                </a>
+                <h3>Education Facilities</h3>
+                <p>Kisii Public University is another of our clients whose property value is a whooping Ksh 17 million.</p>
+            </div>
+            <div class="column">
+                <a href="portfolio.html">
+                    <img src="Images/Flats2.jpg" alt="Flats" style="width:100%" height="200">
+                </a>
+                <h3>Hospitality/Resort</h3>
+                <p>When we work in places where people go to relax and enjoy themselves,<br>
+                    we handle all aspects of the construction process so you're able<br>
+                    to focus on your customers and your business.</p>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="column" style="min-height: 130px;">
+                <h2>Hire CBS</h2>
+                <br>
+                <ul>
+                    <li class="Mainfooter"><a href="#">Access Professionals</a></li>
+                    <li class="Mainfooter"><a href="#">Client Form</a></li>
+                </ul>
+            </div>
+            <div class="column" style="min-height: 130px;">
+                <h2>Join CBS</h2>
+                <br>
+                <ul>
+                    <li class="Mainfooter"><a href="#">Application Form</a></li>
+                </ul>
+            </div>
+            <div class="column" style="min-height: 130px;">
+                <h2>Clients</h2>
+                <br>
+                <ul>
+                    <li class="Mainfooter"><a href="#">Commercial Flats</a></li>
+                    <li class="Mainfooter"><a href="#">Residential Flats</a></li>
+                    <li class="Mainfooter"><a href="#">Educational Facilities</a></li>
+                </ul>
+            </div>
+            <div class="column" style="min-height: 130px;">
+                <h2>Company</h2>
+                <br>
+                <ul>
+                    <li class="Mainfooter"><a href="#">About Us</a>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2018. All rights reserved.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+<script>
+    function myFunction() {
+        var x = document.getElementsByClassName("nav");
+        if (x.className === "nav") {
+            x.className += " responsive";
+        } else {
+            x.className = "nav";
+        }
+    }
+</script>
+</body>
+</html>
